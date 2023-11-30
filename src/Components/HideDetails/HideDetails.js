@@ -4,15 +4,16 @@ import './HideDetails.css';
 function HideDetails() {
     const [show, setShow] = useState(true);
 
+     // Function to handle the toggle of details visibility
     const handleToggle = () => {
         setShow(!show);
     }
 
     return (
         <div className="hide-details-container">
-            <h5>
+            <h5 onClick={handleToggle}>
                 {show ? "Hide Details" : "Show Details"}
-                <span onClick={handleToggle} className="dropdown-icon">&#9660;</span>
+                <span className="dropdown-icon">&#9660;</span>
             </h5>
             
             {show && ( 

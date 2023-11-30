@@ -1,29 +1,36 @@
+/* Style for the heading element */
 h5 {
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
+  
+/* Style for the dropdown icon next to the heading */
   .dropdown-icon {
     margin-left: 5px;
     font-size: 12px;
   }
   
+/* Container for the paragraphs, displaying them with space between */
   .paragraphs-container {
     display: flex;
     justify-content: space-between;
 }
 
+/* Style for paragraphs, removing margin */
 p {
     margin: 0; 
 }
 
+/* Style for the second paragraph in the container */
 .paragraphs-container p:nth-child(2) {
     font-size: large;
     font-weight: bold;
     color: yellow;
 }
 
+/* Style for list items in the unordered list */
 ul li {
   color : grey;
 }

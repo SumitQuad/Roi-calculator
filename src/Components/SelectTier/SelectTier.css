@@ -1,17 +1,21 @@
+ /* Styles for .tabs-container */
 .tabs-container {
     width: 100%;
     margin: 20px auto;
   }
-  
+
+ /* Styles for .tab-buttons */
   .tab-buttons {
     display: flex;
   }
 
+  /* Styles for h4 (Heading) */
   h4{
     color:#A3A3A3;
     ;
   }
   
+  /* Styles for button */
   button {
     padding: 10px 27px 10px 27px !important;
     margin: 0;
@@ -19,17 +23,25 @@
     border: 1px solid #ddd; 
     border-radius: 20px;
     background-color: #eee;
+    font-style: bold;
+    color: gray;
+    font-style: bold;
   }
   
+  /* Styles for active button */
   button.active {
     background-color: #FCEB74;
+    border: 2px solid #f4de37;
+    color : black;
+    font-weight: bold;
   }
 
+  /* Styles for button (not last-child) */
   button:not(:last-child) {
     margin-right: 25px; 
   }
   
-  
+  /* Styles for .tab-content */
   .tab-content {
     margin-top: 10px;
   }

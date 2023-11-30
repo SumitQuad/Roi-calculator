@@ -4,6 +4,7 @@ import "./EnableAcceleratedApy.css";
 function EnableAcceleratedApy() {
     const [isAcceleratedSelected, setIsAcceleratedSelected] = useState(false);
 
+    // Function to handle the toggle of the accelerated state
     const handleToggle = () => {
         setIsAcceleratedSelected(!isAcceleratedSelected);
     }

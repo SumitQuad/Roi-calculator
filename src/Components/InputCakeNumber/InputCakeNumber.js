@@ -2,10 +2,13 @@ import React, { useState, useEffect } from 'react';
 import "./InputCakeNumber.css";
 
 function InputCakeNumber({ isCakeSelected }) {
+    // State for active tab and input value
     const [activeTab, setActiveTab] = useState('tab1');
     const [inputValue, setInputValue] = useState('');
 
+    // useEffect to handle changes when the currency selection (Cake/USD) changes
     useEffect(() => {
+        // Reset input value based on the selected currency
         if (isCakeSelected) {
             setInputValue('');
         } else {
@@ -13,6 +16,8 @@ function InputCakeNumber({ isCakeSelected }) {
         }
     }, [isCakeSelected]);
 
+
+    // Function to handle tab clicks and update input value accordingly
     const handleTabClick = (tab) => {
         setActiveTab(tab);
 
@@ -22,7 +27,7 @@ function InputCakeNumber({ isCakeSelected }) {
                 break;
             case 'tab2':
                 if (isCakeSelected) {
-                    setInputValue('10 Cake'); 
+                    setInputValue('10 Cake');
                 } else {
                     setInputValue('100 USD');
                 }
@@ -31,7 +36,7 @@ function InputCakeNumber({ isCakeSelected }) {
                 if (isCakeSelected) {
                     setInputValue('100 Cake');
                 } else {
-                    setInputValue('1000 USD'); 
+                    setInputValue('1000 USD');
                 }
                 break;
             default:
@@ -46,9 +51,8 @@ function InputCakeNumber({ isCakeSelected }) {
                     type="text"
                     className="full-width-input"
                     placeholder={isCakeSelected ? '2.10000 Cake' : '20.82 USD'}
-                    pattern={isCakeSelected ? "[0-9]*" : null}
-                    inputMode={isCakeSelected ? "numeric" : null}
                     value={inputValue}
+                    onChange={(e) => setInputValue(e.target.value)}
                 />
             </div>
 
@@ -59,7 +63,7 @@ function InputCakeNumber({ isCakeSelected }) {
                             className={activeTab === 'tab1' ? 'active' : ''}
                             onClick={() => handleTabClick('tab1')}
                         >
-                            Use Balance
+                            USE BALANCE
                         </button>
                         <button
                             className={activeTab === 'tab2' ? 'active' : ''}

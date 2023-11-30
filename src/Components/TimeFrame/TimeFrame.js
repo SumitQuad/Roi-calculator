@@ -3,8 +3,10 @@ import "./TimeFrame.css";
 
 function TimeFrame() {
 
+     // State for active tab
     const [activeTab, setActiveTab] = useState('tab1');
 
+      // Function to handle tab click
     const handleTabClick = (tab) => {
       setActiveTab(tab);
     };

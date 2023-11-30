@@ -5,15 +5,16 @@
 
 /* Set height and width of card */
 .card {
-    width: 650px;
-    border: 1px solid black;
-    border-radius: 20px;
+    width: 650px; 
+    border-radius: 30px;
+    border: 1px solid grey;
     position: absolute;
-    margin-top: 15%;
-    margin-bottom: 30%;
+    margin-top: 20%;
+    margin-bottom: 20%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: 30px 30px 30px 30px rgba(236, 235, 231, 0.2); 
 }
 
 /* Set style of card-content */
@@ -23,17 +24,21 @@
     flex-direction: column;
 }
 
-.card-content h2 {
-    font-family: 'Poppins', sans-serif;
+/* Styles for heading part */
+.heading-part {
+    margin-bottom: 0; /* Remove the margin at the bottom */
 }
 
-h2 {
+/* Set the font style and alignment of h2 */
+.card-content h1 {
+    font-family: 'Poppins', sans-serif;
+    color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-
+/* Styles for the close icon */
 .close-icon {
     cursor: pointer;
     margin-left: 10px;
@@ -41,6 +46,7 @@ h2 {
     color: #555;
 }
 
+/* Styles for the close icon on hover */
 .close-icon:hover {
-    color: slateblue;
+    color: #FED700;
 }

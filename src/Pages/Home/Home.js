@@ -10,8 +10,11 @@ import RoiAtCurrentRates from '../../Components/RoiAtCurrentRates/RoiAtCurrentRa
 import InputCakeNumber from '../../Components/InputCakeNumber/InputCakeNumber';
 
 function Home() {
+    
+    // State for Cake Selection, initially set to 'true'
     const [isCakeSelected, setIsCakeSelected] = useState(true);
 
+    // Function to handle the toggle change, updating the state based on the provided toggleState
     const handleToggleChange = (toggleState) => {
         setIsCakeSelected(toggleState);
     };
@@ -21,10 +24,10 @@ function Home() {
             <div className='card'>
                 <div className='card-content'>
                     <div className='heading-part'>
-                        <h2>
+                        <h1>
                             ROI Calculator
                             <span className="close-icon" onClick={() => console.log("Close clicked")}>✖</span>
-                        </h2>
+                        </h1>
                     </div>
                     <ToggleButton onToggleChange={handleToggleChange} />
                     <InputCakeNumber isCakeSelected={isCakeSelected} />

@@ -5,14 +5,17 @@ function RoiAtCurrentRates() {
     const [isEditing, setIsEditing] = useState(false);
     const [placeholder, setPlaceholder] = useState('100.0 USD');
 
+    // Sets isEditing to true when the user clicks on the edit icon.
     const handleEditClick = () => {
         setIsEditing(true);
     }
 
+    // Sets isEditing to false when the user clicks on the save icon
     const handleSaveClick = () => {
         setIsEditing(false);
     }
 
+    // Updates the placeholder state based on the user's input in the input field.
     const handleInputChange = (event) => {
         setPlaceholder(event.target.value);
     }

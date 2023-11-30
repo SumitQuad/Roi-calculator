@@ -1,18 +1,27 @@
+/* Styles for .toggle-button-container */
 .toggle-button-container {
   display: flex;
   justify-content: flex-end;
 }
 
+/* Styles for .selected */
 .selected {
   font-weight: bold;
   color: #FED700;
 }
 
+.not-selected {
+  color: gray;
+  font-weight: bold;
+}
+
+/* Styles for .toggle-button-container span */
 .toggle-button-container span {
   display: flex;
   align-items: center;
 }
 
+/* Styles for .switch */
 .switch {
   position: relative;
   display: inline-block;
@@ -23,12 +32,14 @@
   height: 16px;
 }
 
+/* Styles for .switch input */
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
+/* Styles for .slider */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -42,6 +53,7 @@
   border-radius: 34px;
 }
 
+/* Styles for .slider:before */
 .slider:before {
   position: absolute;
   content: "";
@@ -55,14 +67,17 @@
   border-radius: 50%;
 }
 
+/* Styles for input:checked + .slider */
 input:checked + .slider {
   background-color: #FED700;
 }
 
+/* Styles for input:focus + .slider */
 input:focus + .slider {
   box-shadow: 0 0 1px #FED700;
 }
 
+/* Styles for input:checked + .slider:before */
 input:checked + .slider:before {
   transform: translate(16px);
 }

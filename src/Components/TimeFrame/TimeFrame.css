@@ -1,12 +1,15 @@
+ /* Styles for .tabs-container */
 .tabs-container {
     width: 100%;
     margin: 20px auto;
   }
   
+  /* Styles for .tab-buttons */
   .tab-buttons {
     display: flex;
   }
   
+  /* Styles for button */
   button {
     padding: 10px 25px 10px 25px !important;
     margin: 0;
@@ -16,14 +19,17 @@
     background-color: #eee;
   }
   
+  /* Styles for active button */
   button.active {
     background-color: #FED700;
   }
   
+  /* Styles for button except the last one */
   button:not(:last-child) {
     margin-right: 25px; 
   }
   
+  /* Styles for .tab-content */
   .tab-content {
     margin-top: 10px;
   }

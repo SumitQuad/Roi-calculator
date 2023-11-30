@@ -3,8 +3,10 @@ import "./SelectTier.css";
 
 function SelectTier() {
 
+     // State to manage active tab
     const [activeTab, setActiveTab] = useState('tab4');
 
+     // Function to handle tab clicks
     const handleTabClick = (tab) => {
       setActiveTab(tab);
     };
