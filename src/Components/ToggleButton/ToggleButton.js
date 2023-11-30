@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 import "./ToggleButton.css";
 
-function ToggleButton() {
+function ToggleButton({ onToggleChange }) {
     const [isCakeSelected, setIsCakeSelected] = useState(true);
 
     const handleToggle = () => {
         setIsCakeSelected(!isCakeSelected);
-    }
+        if (onToggleChange) {
+            onToggleChange(!isCakeSelected);
+        }
+    };
+
     return (
         <div className='toggle-button-container'>
             <span className={isCakeSelected ? 'selected' : ''} onClick={() => setIsCakeSelected(true)}>Cake</span>
@@ -16,7 +20,7 @@ function ToggleButton() {
             </label>
             <span className={!isCakeSelected ? 'selected' : ''} onClick={() => setIsCakeSelected(false)}>USD</span>
         </div>
-    )
+    );
 }
 
-export default ToggleButton
+export default ToggleButton;

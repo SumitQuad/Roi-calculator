@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import "./EnableAcceleratedApy.css";
 
 function EnableAcceleratedApy() {
-    const [isAcceleratedSelected, setIsAcceleratedSelected] = useState(true);
+    const [isAcceleratedSelected, setIsAcceleratedSelected] = useState(false);
 
     const handleToggle = () => {
         setIsAcceleratedSelected(!isAcceleratedSelected);

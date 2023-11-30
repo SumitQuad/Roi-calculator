@@ -13,7 +13,7 @@
   }
   
   button {
-    padding: 10px 25px 10px 25px;
+    padding: 10px 27px 10px 27px !important;
     margin: 0;
     cursor: pointer;
     border: 1px solid #ddd; 
@@ -24,10 +24,11 @@
   button.active {
     background-color: #FCEB74;
   }
-  
+
   button:not(:last-child) {
-    margin-right: 23px; 
+    margin-right: 25px; 
   }
+  
   
   .tab-content {
     margin-top: 10px;

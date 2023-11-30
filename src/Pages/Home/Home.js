@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import "./Home.css";
 import ToggleButton from '../../Components/ToggleButton/ToggleButton';
 import Buttons from "../../Components/Buttons/Buttons";
@@ -10,18 +10,24 @@ import RoiAtCurrentRates from '../../Components/RoiAtCurrentRates/RoiAtCurrentRa
 import InputCakeNumber from '../../Components/InputCakeNumber/InputCakeNumber';
 
 function Home() {
+    const [isCakeSelected, setIsCakeSelected] = useState(true);
+
+    const handleToggleChange = (toggleState) => {
+        setIsCakeSelected(toggleState);
+    };
+
     return (
         <div className='App'>
             <div className='card'>
                 <div className='card-content'>
                     <div className='heading-part'>
-                    <h2>
-                        ROI Calculator
-                        <span className="close-icon" onClick={() => console.log("Close clicked")}>✖</span>
-                    </h2>
+                        <h2>
+                            ROI Calculator
+                            <span className="close-icon" onClick={() => console.log("Close clicked")}>✖</span>
+                        </h2>
                     </div>
-                    <ToggleButton />
-                    <InputCakeNumber />
+                    <ToggleButton onToggleChange={handleToggleChange} />
+                    <InputCakeNumber isCakeSelected={isCakeSelected} />
                     <TimeFrame />
                     <EnableAcceleratedApy />
                     <SelectTier />
@@ -31,7 +37,7 @@ function Home() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default Home
+export default Home;

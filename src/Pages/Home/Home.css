@@ -1,6 +1,6 @@
 /* set the margin in App */
-.App{
-    margin-top: 20px ;
+.App {
+    margin-top: 20px;
 }
 
 /* Set height and width of card */
@@ -17,14 +17,14 @@
 }
 
 /* Set style of card-content */
-.card-content{
-padding: 30px;
-display: flex;
-flex-direction: column;
+.card-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-content h2 {
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
 }
 
 h2 {
@@ -42,6 +42,5 @@ h2 {
 }
 
 .close-icon:hover {
-    color: slateblue; 
+    color: slateblue;
 }
-
