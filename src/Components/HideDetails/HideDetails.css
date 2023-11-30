@@ -1,0 +1,25 @@
+h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dropdown-icon {
+    margin-left: 5px;
+    font-size: 12px;
+  }
+  
+  .paragraphs-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+p {
+    margin: 0; 
+}
+
+.paragraphs-container p:nth-child(2) {
+    font-size: large;
+    font-weight: bold;
+    color: yellow;
+}

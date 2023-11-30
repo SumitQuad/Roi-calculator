@@ -1,0 +1,19 @@
+.App {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .apply {
+    background-color: black;
+    padding: 20px 110px 20px 110px;
+    font-size: 15px;
+    color: white;
+  }
+  
+  .cancel {
+    background-color: white;
+    padding:  20px 110px 20px 110px;
+    font-size: 15px;
+    color: black;
+  }
+  

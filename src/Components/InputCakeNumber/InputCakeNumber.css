@@ -1,0 +1,26 @@
+.Balance {
+    text-align: right;
+}
+
+.full-width-input {
+    width : 96%;
+    height: 50px;
+}
+
+.tab-balance-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-container input {
+    color: black;
+    opacity: 0.6;
+}
+
+
+.input-container input::placeholder {
+    color: black;
+    opacity: 0.6;
+}
+
+

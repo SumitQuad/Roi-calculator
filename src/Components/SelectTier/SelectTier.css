@@ -1,0 +1,35 @@
+.tabs-container {
+    width: 100%;
+    margin: 20px auto;
+  }
+  
+  .tab-buttons {
+    display: flex;
+  }
+
+  h4{
+    color:#A3A3A3;
+    ;
+  }
+  
+  button {
+    padding: 10px 25px 10px 25px;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid #ddd; 
+    border-radius: 20px;
+    background-color: #eee;
+  }
+  
+  button.active {
+    background-color: #FCEB74;
+  }
+  
+  button:not(:last-child) {
+    margin-right: 23px; 
+  }
+  
+  .tab-content {
+    margin-top: 10px;
+  }
+  
