@@ -4,9 +4,10 @@
 }
 
 .card {
-    width: 80%;
+    width: 680px;
     border-radius: 30px;
     border: 1px solid grey;
+    margin-left: 2%;
     box-shadow: 30px 30px 30px 30px rgba(236, 235, 231, 0.2);
 }
 
