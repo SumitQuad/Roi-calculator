@@ -25,13 +25,27 @@ button.active {
   background-color: #FED700;
 }
 
-/* Styles for button except the last one */
+/* Styles for .tab-content */
+.tab-content {
+  margin-top: 10px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  /* Adjust styles for buttons on smaller screens */
+  button {
+    padding: 8px 12px; /* Adjust padding for smaller screens */
+  }
+
+  /* Remove margin-bottom for the last button on smaller screens */
+  button:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Styles for button except the last one */
 button:not(:last-child) {
   margin-right: 15px; /* Adjust margin for smaller screens */
   margin-bottom: 10px; /* Add bottom margin to create space between rows */
 }
 
-/* Styles for .tab-content */
-.tab-content {
-  margin-top: 10px;
 }
