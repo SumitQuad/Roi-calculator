@@ -1,36 +1,37 @@
- /* Styles for .tabs-container */
+/* Styles for .tabs-container */
 .tabs-container {
-    width: 100%;
-    margin: 20px auto;
-  }
-  
-  /* Styles for .tab-buttons */
-  .tab-buttons {
-    display: flex;
-  }
-  
-  /* Styles for button */
-  button {
-    padding: 10px 25px 10px 25px !important;
-    margin: 0;
-    cursor: pointer;
-    border: 1px solid #ddd; 
-    border-radius: 20px;
-    background-color: #eee;
-  }
-  
-  /* Styles for active button */
-  button.active {
-    background-color: #FED700;
-  }
-  
-  /* Styles for button except the last one */
-  button:not(:last-child) {
-    margin-right: 25px; 
-  }
-  
-  /* Styles for .tab-content */
-  .tab-content {
-    margin-top: 10px;
-  }
-  
+  width: 100%;
+  margin: 20px auto;
+}
+
+/* Styles for .tab-buttons */
+.tab-buttons {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap to the next line on smaller screens */
+}
+
+/* Styles for button */
+button {
+  padding: 10px 15px; /* Adjust padding for smaller screens */
+  margin: 0;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background-color: #eee;
+}
+
+/* Styles for active button */
+button.active {
+  background-color: #FED700;
+}
+
+/* Styles for button except the last one */
+button:not(:last-child) {
+  margin-right: 15px; /* Adjust margin for smaller screens */
+  margin-bottom: 10px; /* Add bottom margin to create space between rows */
+}
+
+/* Styles for .tab-content */
+.tab-content {
+  margin-top: 10px;
+}

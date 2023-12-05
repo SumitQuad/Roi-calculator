@@ -1,35 +1,25 @@
-/* set the margin in App */
+/* Default styles for larger screens */
 .App {
     margin-top: 20px;
 }
 
-/* Set height and width of card */
 .card {
-    width: 650px; 
+    width: 74%;
     border-radius: 30px;
     border: 1px solid grey;
-    position: absolute;
-    margin-top: 20%;
-    margin-bottom: 20%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 30px 30px 30px 30px rgba(236, 235, 231, 0.2); 
+    box-shadow: 30px 30px 30px 30px rgba(236, 235, 231, 0.2);
 }
 
-/* Set style of card-content */
 .card-content {
     padding: 30px;
     display: flex;
     flex-direction: column;
 }
 
-/* Styles for heading part */
 .heading-part {
-    margin-bottom: 0; /* Remove the margin at the bottom */
+    margin-bottom: 0;
 }
 
-/* Set the font style and alignment of h2 */
 .card-content h1 {
     font-family: 'Poppins', sans-serif;
     color: black;
@@ -38,7 +28,6 @@
     align-items: center;
 }
 
-/* Styles for the close icon */
 .close-icon {
     cursor: pointer;
     margin-left: 10px;
@@ -46,7 +35,20 @@
     color: #555;
 }
 
-/* Styles for the close icon on hover */
 .close-icon:hover {
     color: #FED700;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 80%;
+        max-width: 100%; /* Allow the card to take full width on smaller screens */
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
 }
